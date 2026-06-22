@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Tool Stack — Creator Blueprint</title>
+<meta name="description" content="Voice cloning, video editing, AI voice generation, and AI video creation tools compared side by side — free tiers through enterprise pricing, updated for 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="tools-topbar">
+  <nav class="tools-topbar-inner" aria-label="Tool category navigation" data-tools-tabs>
+    <a class="tools-tab home-tab" href="index.html">Home</a>
+    <button class="tools-tab active" data-tab="voice-clone">Voice Cloning &amp; Audio</button>
+    <button class="tools-tab" data-tab="video-edit">Video Editing</button>
+    <button class="tools-tab" data-tab="ai-voice">AI Voice for Content</button>
+    <button class="tools-tab" data-tab="ai-video">AI Video Creation</button>
+  </nav>
+</div>
+
+<main>
+  <div class="container" style="max-width: 920px; margin: 0 auto; padding: 0 20px;">
+
+    <section style="padding: 48px 0 8px;">
+      <p class="hero-eyebrow">Field Manual · Tool Stack · Updated mid-2026</p>
+      <h1 style="font-family: var(--font-display); font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 600; line-height: 1.05; letter-spacing: -0.01em; margin: 0 0 16px; text-transform: uppercase;">The <em style="font-style: normal; color: var(--accent-amber);">Tool Stack</em></h1>
+      <p class="hero-sub" style="margin-bottom: 24px;">Four production categories, ten tools each, with every pricing tier laid out. A tool tagged with a bubble shows up under more than one tab because its feature set genuinely spans both categories — that's not a mistake, it's how the market actually overlaps right now.</p>
+    </section>
+
+    <div class="callout warn">
+      <span class="callout-label">Read this before you subscribe to anything</span>
+      <p>Pricing on every tool below changes often — promo discounts, credit-system overhauls, and full pricing-page restructures are common in this market, and at least one widely-recommended tool from 2025 (PlayHT) was discontinued entirely after an acquisition in late 2025. Treat every number on this page as directionally accurate as of mid-2026, not as a live quote. Always confirm current pricing on the provider's own site before paying. Voice cloning specifically carries a consent requirement on every reputable platform — you generally need to either clone your own voice or have explicit written consent from whoever you're cloning.</p>
+    </div>
+
+    <!-- TAB 1: VOICE CLONING & AUDIO -->
+    <div class="tab-panel active" data-panel="voice-clone">
+      <p class="tab-intro">For cloning your own voice (with your own consent, on yourself) to use in AI-narrated audio — plus the audio-editing tools that bundle cloning in as one feature among several.</p>
+
+      <div class="decision-box">
+        <div class="decision-box-head">Which one should I actually pick?</div>
+        <div class="decision-grid">
+          <div class="decision-row">
+            <span class="d-if">If you want the most natural-sounding clone of yourself, budget allowing</span>
+            <span class="d-pick">Pick <strong>ElevenLabs Creator</strong> ($22/mo) — cheapest tier with Professional Voice Cloning</span>
+          </div>
+          <div class="decision-row">
+            <span class="d-if">If you're testing the idea before paying anything</span>
+            <span class="d-pick">Pick <strong>ElevenLabs Free</strong> or <strong>Murf Free</strong> to hear voice quality first — neither lets you clone or download yet</span>
+          </div>
+          <div class="decision-row">
+            <span class="d-if">If you already edit podcasts/video and want cloning bundled in</span>
+            <span class="d-pick">Pick <strong>Descript Creator</strong> (~$24/mo) — Overdub clone + full editor in one subscription</span>
+          </div>
+          <div class="decision-row">
+            <span class="d-if">If cost-per-character matters more than polish</span>
+            <span class="d-pick">Pick <strong>Fish Audio</strong> — openly competitive quality at roughly half ElevenLabs' per-character rate</span>
+          </div>
+          <div class="decision-row">
+            <span class="d-if">If you want zero ongoing cost and don't mind a technical setup</span>
+            <span class="d-pick">Pick <strong>Coqui TTS</strong> — free and unlimited, but self-hosted and requires Python + a GPU</span>
+          </div>
+          <div class="decision-row">
+            <span class="d-if">If you need enterprise-grade security or on-prem deployment</span>
+            <span class="d-pick">Pick <strong>Resemble AI</strong> — built for developers/teams with compliance requirements</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Tool</th><th>Free Tier</th><th>Entry Paid Tier</th><th>Mid Tier</th><th>Top / Enterprise Tier</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="winner">ElevenLabs <span class="badge amber">Also: AI Voice</span></td>
+              <td>$0 — 10k credits/mo (~10 min), no commercial rights, no cloning</td>
+              <td>Starter $6/mo — Instant Voice Cloning unlocked, commercial rights, 30k credits</td>
+              <td>Creator $22/mo — Professional Voice Cloning (higher-fidelity clone), 121k credits</td>
+              <td>Pro $99/mo · Scale $299/mo · Business $990/mo · Enterprise custom</td>
+            </tr>
+            <tr>
+              <td>Resemble AI</td>
+              <td>Limited free plan</td>
+              <td>Pay-as-you-go from ~$0.006/sec generated</td>
+              <td>Developer/team plans, custom volume pricing</td>
+              <td>Enterprise — on-prem deployment, SOC 2, neural watermarking, custom quote</td>
+            </tr>
+            <tr>
+              <td>Descript <span class="badge amber">Also: Video Editing</span></td>
+              <td>$0 — 1 hr media/mo, limited Overdub (clone) minutes</td>
+              <td>Creator ~$24/mo — 30 hrs media/mo, fuller Overdub access</td>
+              <td>Pro tier — more hours, priority processing</td>
+              <td>Enterprise — custom seats &amp; compliance</td>
+            </tr>
+            <tr>
+              <td>Fish Audio</td>
+              <td>Free tier with usage cap</td>
+              <td>Pay-per-use — roughly $15 per million characters</td>
+              <td>Higher-volume usage tiers</td>
+              <td>Custom enterprise / API volume pricing</td>
+            </tr>
+            <tr>
+              <td>Murf AI <span class="badge amber">Also: AI Voice</span></td>
+              <td>$0 — 10 min lifetime, no downloads, no commercial use</td>
+              <td>Creator ~$19–29/mo — commercial rights, downloads, AI Voice Changer</td>
+              <td>Business ~$66–99/mo — collaboration, PowerPoint add-on</td>
+              <td>Enterprise custom — voice cloning lives here, not on lower tiers</td>
+            </tr>
+            <tr>
+              <td>Notevibes</td>
+              <td>Limited free preview</td>
+              <td>~$19/mo — 500k credits, commercial rights</td>
+              <td>Higher-credit plans available</td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td>WellSaid Labs</td>
+              <td>No free cloning tier</td>
+              <td>Maker ~$49/mo</td>
+              <td>Professional ~$99/mo</td>
+              <td>Enterprise — custom, compliance-focused (HIPAA-adjacent industries)</td>
+            </tr>
+            <tr>
+              <td>Respeecher</td>
+              <td>Demo/consultation only</td>
+              <td>Project-based quote</td>
+              <td>Project-based quote</td>
+              <td>Enterprise/media production licensing, fully custom</td>
+            </tr>
+            <tr>
+              <td>Coqui TTS (open source)</td>
+              <td>Free, unlimited — runs on your own hardware</td>
+              <td>n/a (no paid tier — self-hosted)</td>
+              <td>n/a</td>
+              <td>n/a — cost is your own GPU/compute, not a subscription</td>
+            </tr>
+            <tr>
+              <td>fal.ai (model marketplace)</td>
+              <td>Pay-as-you-go, no subscription</td>
+              <td>Voice clone ≈$1.50 per clone + ~$0.30/1k characters preview</td>
+              <td>Scales with usage, no plan tiers</td>
+              <td>—</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="console-note"><strong>For cloning your own voice specifically:</strong> ElevenLabs Creator ($22/mo) is the most commonly recommended starting point — it's the cheapest tier with a genuine high-fidelity clone, and it doubles as a full AI-voice content tool (see that tab). If budget is the binding constraint, Fish Audio's open-source-backed model is the most-cited lower-cost alternative on quality. Coqui is the only fully free, unlimited option, but it requires comfort with Python and your own GPU.</div>
+    </div>
+
+    <!-- TAB 2: VIDEO EDITING -->
+    <div class="tab-panel" data-panel="video-edit">
+      <p class="tab-intro">From genuinely free professional-grade editors to subscription suites. Several of these double as AI tools — flagged where relevant.</p>
+
+      <div class="decision-box">
+        <div class="decision-box-head">Which one should I actually pick?</div>
+        <div class="decision-grid">
+          <div class="decision-row">
+            <span class="d-if">If you're just starting out and don't want to pay anything</span>
+            <span class="d-pick">Pick <strong>DaVinci Resolve (Free)</strong> — genuinely professional, no watermark, no time limit</span>
+          </div>
+          <div class="decision-row">
+            <span class="d-if">If you're editing mostly Shorts/vertical content on mobile</span>
+            <span class="d-pick">Pick <strong>CapCut (Free)</strong> — fastest mobile-first workflow, built-in captions and templates</span>
+          </div>
+          <div class="decision-row">
+            <span class="d-if">If your content is talk-heavy (podcasts, interviews, tutorials)</span>
+            <span class="d-pick">Pick <strong>Descript Creator</strong> (~$24/mo) — edit by editing the transcript, not the timeline</span>
+          </div>
+          <div class="decision-row">
+            <span class="d-if">If you're already paying for Creative Cloud / need After Effects</span>
+            <span class="d-pick">Pick <strong>Premiere Pro</strong> (~$22.99/mo) — only worth it for the ecosystem integration</span>
+          </div>
+          <div class="decision-row">
+            <span class="d-if">If you're on a Mac and want the fastest render speed</span>
+            <span class="d-pick">Pick <strong>Final Cut Pro</strong> (~$299 one-time) — no subscription, optimized for Apple Silicon</span>
+          </div>
+          <div class="decision-row">
+            <span class="d-if">If you want a free editor with zero data-collection concerns</span>
+            <span class="d-pick">Pick <strong>Shotcut</strong> or <strong>DaVinci Resolve</strong> — both process everything locally, unlike CapCut</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Tool</th><th>Free Tier</th><th>Entry Paid Tier</th><th>Mid Tier</th><th>Top Tier</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="winner">DaVinci Resolve <span class="badge amber">Winner — Free</span></td>
+              <td>$0 — full editing, color grading, Fairlight audio, Fusion VFX, no watermark, no time limit</td>
+              <td>—</td>
+              <td>—</td>
+              <td>Resolve Studio ~$295 one-time — higher frame-rate exports, extra Neural Engine AI tools, collab features</td>
+            </tr>
+            <tr>
+              <td>CapCut</td>
+              <td>$0 — 4K export, auto-captions, templates, background removal, no watermark</td>
+              <td>CapCut Pro ~$9.99/mo — extra AI features, cloud storage, premium effects</td>
+              <td>—</td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td>Adobe Premiere Pro</td>
+              <td>7-day trial only</td>
+              <td>~$22.99/mo (single app, annual plan)</td>
+              <td>Creative Cloud All Apps ~$59.99–89.99/mo — includes After Effects, Audition, Photoshop</td>
+              <td>Enterprise/Teams licensing — custom</td>
+            </tr>
+            <tr>
+              <td>Final Cut Pro</td>
+              <td>90-day trial</td>
+              <td>~$299 one-time (Mac only)</td>
+              <td>—</td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td>Descript <span class="badge amber">Also: Voice Cloning</span></td>
+              <td>$0 — 1 hr media/mo</td>
+              <td>Creator ~$24/mo — transcript-based editing, Overdub, Studio Sound</td>
+              <td>Pro tier — more hours, priority render</td>
+              <td>Enterprise — custom</td>
+            </tr>
+            <tr>
+              <td>Filmora</td>
+              <td>Free with watermark</td>
+              <td>Annual plan, roughly $50–70/yr</td>
+              <td>Perpetual license option, one-time fee</td>
+              <td>Filmora Business — custom</td>
+            </tr>
+            <tr>
+              <td>iMovie</td>
+              <td>$0 — free with every Mac/iOS device, no watermark</td>
+              <td>n/a</td>
+              <td>n/a</td>
+              <td>n/a — Mac/iOS only, no paid tier exists</td>
+            </tr>
+            <tr>
+              <td>Shotcut</td>
+              <td>$0 — fully open-source, no watermark, no limits</td>
+              <td>n/a</td>
+              <td>n/a</td>
+              <td>n/a — donation-supported, not a paid product</td>
+            </tr>
+            <tr>
+              <td>Lightworks</td>
+              <td>Free — watermark only above 720p export</td>
+              <td>Create ~$9.99/mo</td>
+              <td>Pro tier — higher resolution &amp; format support</td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td>Clipchamp</td>
+              <td>$0 — included with Microsoft account, no watermark on basic export</td>
+              <td>Bundled into Microsoft 365 Personal/Family subscriptions</td>
+              <td>—</td>
+              <td>—</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="console-note"><strong>The honest recommendation:</strong> DaVinci Resolve's free tier is genuinely Hollywood-grade — most creators never need to pay for an editor at all. CapCut is the faster on-ramp specifically for Shorts/vertical content. Pay for Premiere Pro or Final Cut only once a specific ecosystem integration (After Effects, Apple Silicon render speed) is the actual bottleneck, not because they're "the industry standard."</div>
+    </div>
+
+    <!-- TAB 3: AI VOICE FOR CONTENT CREATION -->
+    <div class="tab-panel" data-panel="ai-voice">
+      <p class="tab-intro">Text-to-speech and AI narration tools built for shipping finished voiceovers — distinct from the cloning tab in that most of these lean on a library of pre-built voices rather than (or in addition to) cloning yours.</p>
+
+      <div class="decision-box">
+        <div class="decision-box-head">Which one should I actually pick?</div>
+        <div class="decision-grid">
+          <div class="decision-row">
+            <span class="d-if">If you want the most realistic narration voice, full stop</span>
+            <span class="d-pick">Pick <strong>ElevenLabs Creator</strong> ($22/mo) — the benchmark for naturalness across this category</span>
+          </div>
+          <div class="decision-row">
+            <span class="d-if">If you need a polished voice synced to slides/video in one tool</span>
+            <span class="d-pick">Pick <strong>Murf Creator</strong> (~$19–29/mo) — built-in video timeline, Canva integration</span>
+          </div>
+          <div class="decision-row">
+            <span class="d-if">If you want a huge voice/emotion library on a tighter budget</span>
+            <span class="d-pick">Pick <strong>Notevibes</strong> (~$19/mo) — 550+ voices, 80+ emotion tags, 500k credits</span>
+          </div>
+          <div class="decision-row">
+            <span class="d-if">If this is for regulated/corporate training content</span>
+            <span class="d-pick">Pick <strong>WellSaid Labs</strong> (~$49/mo) — tuned for clarity over hours of listening</span>
+          </div>
+          <div class="decision-row">
+            <span class="d-if">If you mainly need text-to-speech for reading articles, not video narration</span>
+            <span class="d-pick">Pick <strong>Speechify</strong> — built specifically for consuming written content aloud</span>
+          </div>
+          <div class="decision-row">
+            <span class="d-if">If you're building voice into your own app or product</span>
+            <span class="d-pick">Pick <strong>Google Cloud TTS</strong> or <strong>Amazon Polly</strong> — pay-per-character, API-first, no Studio UI needed</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Tool</th><th>Free Tier</th><th>Entry Paid Tier</th><th>Mid Tier</th><th>Top Tier</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="winner">ElevenLabs <span class="badge amber">Also: Voice Cloning</span></td>
+              <td>$0 — 10k credits/mo, no commercial rights</td>
+              <td>Starter $6/mo</td>
+              <td>Creator $22/mo — most-recommended tier for regular creators</td>
+              <td>Pro $99/mo · Scale $299/mo · Business $990/mo</td>
+            </tr>
+            <tr>
+              <td>Murf AI <span class="badge amber">Also: Voice Cloning</span></td>
+              <td>$0 — 10 min lifetime, no downloads</td>
+              <td>Creator ~$19–29/mo — commercial rights, 200+ voices, Canva integration</td>
+              <td>Business ~$66–99/mo — collaboration, PowerPoint/Slides add-ons</td>
+              <td>Enterprise — custom, includes voice cloning</td>
+            </tr>
+            <tr>
+              <td>Notevibes</td>
+              <td>Limited preview</td>
+              <td>~$19/mo — 550+ voices, 80+ emotion tags, 500k credits</td>
+              <td>Higher-credit plans</td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td>WellSaid Labs</td>
+              <td>Demo only</td>
+              <td>Maker ~$49/mo</td>
+              <td>Professional ~$99/mo</td>
+              <td>Enterprise custom — Adobe Express/Premiere integration</td>
+            </tr>
+            <tr>
+              <td>Speechify</td>
+              <td>$0 — basic text-to-speech, limited voices</td>
+              <td>Premium ~$11.58–29/mo (billing varies)</td>
+              <td>—</td>
+              <td>Speechify Studio / API — custom</td>
+            </tr>
+            <tr>
+              <td>Descript (AI Speech) <span class="badge amber">Also: Video Editing</span></td>
+              <td>$0 — 1 hr media/mo</td>
+              <td>Creator ~$24/mo</td>
+              <td>Pro tier</td>
+              <td>Enterprise — custom</td>
+            </tr>
+            <tr>
+              <td>LOVO AI</td>
+              <td>Limited free trial</td>
+              <td>~$24/mo</td>
+              <td>Higher-volume plans</td>
+              <td>Enterprise — custom</td>
+            </tr>
+            <tr>
+              <td>Fish Audio</td>
+              <td>Free tier with cap</td>
+              <td>Pay-per-use ~$15/million characters</td>
+              <td>Volume-based</td>
+              <td>Enterprise/API custom</td>
+            </tr>
+            <tr>
+              <td>Google Cloud TTS</td>
+              <td>Free monthly character allotment</td>
+              <td>Pay-per-character beyond free tier (~$4–16 per million characters depending on voice tier)</td>
+              <td>Scales with usage</td>
+              <td>Enterprise GCP contracts</td>
+            </tr>
+            <tr>
+              <td>Amazon Polly</td>
+              <td>Free tier for first 12 months (AWS), capped characters/mo</td>
+              <td>Pay-per-character after free tier</td>
+              <td>Scales with usage</td>
+              <td>Enterprise AWS contracts</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="console-note"><strong>Matching the SEO metadata workflow:</strong> the metadata demo on the Blueprint's SEO phase assumes an ElevenLabs- or Murf-style narration workflow — either works, and the choice mostly comes down to whether you want a cloned version of your own voice (ElevenLabs' edge) or a polished pre-built voice with a built-in video timeline (Murf's edge).</div>
+    </div>
+
+    <!-- TAB 4: AI VIDEO CREATION -->
+    <div class="tab-panel" data-panel="ai-video">
+      <p class="tab-intro">Text/image-to-video generators and AI avatar platforms. These create footage or presenters — they don't replace a timeline editor for assembling a finished video (see the Video Editing tab for that).</p>
+
+      <div class="decision-box">
+        <div class="decision-box-head">Which one should I actually pick?</div>
+        <div class="decision-grid">
+          <div class="decision-row">
+            <span class="d-if">If you want an AI presenter speaking your script (no camera needed)</span>
+            <span class="d-pick">Pick <strong>HeyGen Creator</strong> (~$24–29/mo) — unlimited videos, easiest script-to-avatar workflow</span>
+          </div>
+          <div class="decision-row">
+            <span class="d-if">If this is for enterprise training/onboarding at scale</span>
+            <span class="d-pick">Pick <strong>Synthesia Creator</strong> (~$64–89/mo) — deepest template library, custom personal avatars</span>
+          </div>
+          <div class="decision-row">
+            <span class="d-if">If you need cinematic B-roll or scene footage from a text prompt</span>
+            <span class="d-pick">Pick <strong>Runway Standard</strong> (~$15/mo) or <strong>Kling Standard</strong> (~$8/mo) for the budget option</span>
+          </div>
+          <div class="decision-row">
+            <span class="d-if">If you want the single highest visual quality, budget aside</span>
+            <span class="d-pick">Pick <strong>Google Veo</strong> (via Google AI Pro, ~$28.99/mo) — strongest prompt adherence and native audio</span>
+          </div>
+          <div class="decision-row">
+            <span class="d-if">If you're testing ideas before committing to a paid plan</span>
+            <span class="d-pick">Pick <strong>HeyGen Free</strong> (3 videos/mo) or <strong>Pika Free</strong> — both give a real feel for output quality</span>
+          </div>
+          <div class="decision-row">
+            <span class="d-if">If you want stylized/artistic clips rather than photorealism</span>
+            <span class="d-pick">Pick <strong>Pika</strong> (~$10/mo) — built for creative effects over realism</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout">
+        <span class="callout-label">A note on availability</span>
+        <p>OpenAI's standalone Sora web/app experience was discontinued in April 2026 (API access was slated to follow later in the year), and PlayHT was shut down in December 2025 after its acquisition by Meta. Both are omitted below for that reason — if you see them recommended in older articles, check current availability before planning a workflow around either.</p>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Tool</th><th>Free Tier</th><th>Entry Paid Tier</th><th>Mid Tier</th><th>Top Tier</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="winner">HeyGen <span class="badge amber">Avatar / Talking-Head</span></td>
+              <td>$0 — 3 videos/mo, full avatar library to test</td>
+              <td>Creator ~$24–29/mo — unlimited videos, 1080p</td>
+              <td>Team ~$39/seat/mo — 2 seats, 4K export</td>
+              <td>Business ~$149/mo+ · Enterprise — custom</td>
+            </tr>
+            <tr>
+              <td>Synthesia <span class="badge amber">Avatar / Talking-Head</span></td>
+              <td>$0 — ~3 min/mo, watermarked, 9 avatars</td>
+              <td>Starter ~$18–29/mo — 10 min/mo, logo removed, 125+ avatars</td>
+              <td>Creator ~$64–89/mo — 30 min/mo, 5 personal avatars, API access</td>
+              <td>Enterprise — custom, typically low five figures/yr</td>
+            </tr>
+            <tr>
+              <td>Runway</td>
+              <td>One-time 125 free credits, no recurring free tier</td>
+              <td>Standard ~$15/mo — 625 credits/mo</td>
+              <td>Pro ~$35/mo — 2,250 credits, custom lip-sync voices</td>
+              <td>Unlimited ~$95/mo · Enterprise custom</td>
+            </tr>
+            <tr>
+              <td>Kling AI</td>
+              <td>Limited free generations</td>
+              <td>Standard ~$8/mo</td>
+              <td>Higher-credit tiers available</td>
+              <td>Enterprise/API — usage-based, ~$0.07/sec generated</td>
+            </tr>
+            <tr>
+              <td>Google Veo (via Gemini/AI Studio)</td>
+              <td>Limited free generation through AI Studio rate limits</td>
+              <td>Google AI Pro ~$28.99/mo (bundles 2TB storage + Veo access)</td>
+              <td>—</td>
+              <td>Google AI Ultra ~$359.98/mo (promo pricing fluctuates)</td>
+            </tr>
+            <tr>
+              <td>Pika</td>
+              <td>Free — limited generations/mo</td>
+              <td>Standard ~$10/mo</td>
+              <td>Pro ~$30/mo</td>
+              <td>Premier ~$50/mo</td>
+            </tr>
+            <tr>
+              <td>Luma Dream Machine</td>
+              <td>Free tier with limited generations</td>
+              <td>Lite ~$9.99/mo</td>
+              <td>Higher-credit plans available</td>
+              <td>Enterprise/API — custom</td>
+            </tr>
+            <tr>
+              <td>InVideo AI</td>
+              <td>Limited free plan</td>
+              <td>Plus ~$25–28/mo</td>
+              <td>—</td>
+              <td>Enterprise/Business — custom</td>
+            </tr>
+            <tr>
+              <td>Adobe Firefly Video</td>
+              <td>Limited free generative credits with Adobe account</td>
+              <td>Bundled into Creative Cloud generative-credit plans</td>
+              <td>Higher generative-credit tiers</td>
+              <td>Enterprise — custom</td>
+            </tr>
+            <tr>
+              <td>Seedance (ByteDance)</td>
+              <td>Free tier at launch (limits tighten over time per other ByteDance tools)</td>
+              <td>Paid tiers via model marketplaces (e.g. fal.ai), usage-based</td>
+              <td>Scales with usage</td>
+              <td>Enterprise/API — custom</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="console-note"><strong>Two different jobs, easy to conflate:</strong> HeyGen and Synthesia generate a <em>presenter</em> speaking your script — the closest fit if "AI video" means a talking-head explainer. Runway, Kling, Veo, Pika, and Luma generate <em>scene footage</em> from a prompt — the right tools for B-roll or stylized cutaways, not a presenter. Most production pipelines that use both pick one avatar tool and one or two generative tools rather than overlapping five.</div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>The Tool Stack — a companion reference to The Creator Blueprint. Figures and pricing cited reflect publicly available information as of mid-2026 and are subject to change — verify current pricing directly on each provider's site before subscribing.</p>
+  </div>
+</footer>
+
+<script src="js/tools.js"></script>
+</body>
+</html>
