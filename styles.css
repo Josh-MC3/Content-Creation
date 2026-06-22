@@ -208,6 +208,22 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
   margin-bottom: 2px;
 }
 
+.scrub-tools-link {
+  display: block;
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line-soft);
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  letter-spacing: 0.04em;
+  color: var(--accent-teal);
+}
+
+.scrub-tools-link:hover {
+  color: var(--accent-amber);
+  text-decoration: none;
+}
+
 /* ===========================================================
    MAIN CONTENT
    =========================================================== */
@@ -701,53 +717,90 @@ td.winner {
 }
 
 /* ===========================================================
-   TABS — tool stack category switcher
+   TOOLS PAGE — TOP BAR NAVIGATION
    =========================================================== */
-.tabs {
-  margin: 24px 0 8px;
-}
-
-.tab-bar {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
+.tools-topbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--bg-console);
   border-bottom: 1px solid var(--line);
-  margin-bottom: 24px;
-  padding-bottom: 0;
 }
 
-.tab-btn {
+.tools-topbar-inner {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0 20px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.tools-topbar-inner::-webkit-scrollbar { display: none; }
+
+.tools-topbar-brand {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: var(--accent-amber);
+  padding: 14px 18px 14px 0;
+  white-space: nowrap;
+  border-right: 1px solid var(--line-soft);
+  margin-right: 8px;
+}
+
+.tools-tab {
   font-family: var(--font-mono);
   font-size: 12.5px;
   letter-spacing: 0.03em;
-  background: transparent;
-  border: 1px solid var(--line);
-  border-bottom: none;
   color: var(--text-secondary);
-  padding: 10px 16px;
-  border-radius: var(--radius) var(--radius) 0 0;
+  background: transparent;
+  border: none;
+  padding: 16px 16px;
+  white-space: nowrap;
   cursor: pointer;
-  margin-bottom: -1px;
-  transition: color 0.15s, background 0.15s, border-color 0.15s;
+  position: relative;
+  transition: color 0.15s;
 }
 
-.tab-btn:hover {
+.tools-tab:hover {
   color: var(--text-primary);
-  background: var(--bg-panel);
 }
 
-.tab-btn.active {
+.tools-tab.active {
   color: var(--accent-amber);
-  background: var(--bg-panel);
-  border-color: var(--line);
-  border-bottom: 2px solid var(--bg-panel);
 }
 
-.tab-btn:focus-visible {
-  outline: 2px solid var(--accent-amber);
-  outline-offset: 2px;
+.tools-tab.active::after {
+  content: "";
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  bottom: 0;
+  height: 2px;
+  background: var(--accent-amber);
 }
 
+.tools-tab.home-tab {
+  color: var(--accent-teal);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.tools-tab.home-tab:hover {
+  color: var(--text-primary);
+}
+
+.tools-tab.home-tab::before {
+  content: "\2190";
+}
+
+/* ===========================================================
+   TABS — tool stack panel switching (driven by top bar)
+   =========================================================== */
 .tab-panel {
   display: none;
 }
@@ -845,14 +898,12 @@ td.winner {
 }
 
 @media (max-width: 640px) {
-  .tab-bar {
-    gap: 4px;
-  }
-  .tab-btn {
-    flex: 1 1 calc(50% - 4px);
-    text-align: center;
+  .tools-tab {
+    padding: 14px 12px;
     font-size: 11.5px;
-    padding: 9px 8px;
+  }
+  .tools-topbar-brand {
+    display: none;
   }
 }
 
