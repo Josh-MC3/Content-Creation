@@ -57,4 +57,27 @@
       });
     });
   }
+
+  // Tool Stack tabs (Phase 9)
+  var tabContainers = Array.prototype.slice.call(document.querySelectorAll("[data-tabs]"));
+  tabContainers.forEach(function (container) {
+    var buttons = Array.prototype.slice.call(container.querySelectorAll(".tab-btn"));
+    var panels = Array.prototype.slice.call(container.querySelectorAll(".tab-panel"));
+
+    buttons.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var target = btn.getAttribute("data-tab");
+
+        buttons.forEach(function (b) {
+          var isActive = b === btn;
+          b.classList.toggle("active", isActive);
+          b.setAttribute("aria-selected", isActive ? "true" : "false");
+        });
+
+        panels.forEach(function (panel) {
+          panel.classList.toggle("active", panel.getAttribute("data-panel") === target);
+        });
+      });
+    });
+  });
 })();
