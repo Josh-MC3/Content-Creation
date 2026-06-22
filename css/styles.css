@@ -464,6 +464,7 @@ td.winner {
   background: var(--accent-teal-dim);
   color: var(--accent-teal);
   margin-left: 6px;
+  white-space: nowrap;
 }
 
 .badge.amber { background: var(--accent-amber-dim); color: var(--accent-amber); }
@@ -717,6 +718,16 @@ td.winner {
 }
 
 /* ===========================================================
+   UTILITY
+   =========================================================== */
+.text-center { text-align: center; }
+.mt-0 { margin-top: 0; }
+.small-note {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* ===========================================================
    TOOLS PAGE — TOP BAR NAVIGATION
    =========================================================== */
 .tools-topbar {
@@ -905,14 +916,4 @@ td.winner {
   .tools-topbar-brand {
     display: none;
   }
-}
-
-/* ===========================================================
-   UTILITY
-   =========================================================== */
-.text-center { text-align: center; }
-.mt-0 { margin-top: 0; }
-.small-note {
-  font-size: 0.85rem;
-  color: var(--text-muted);
 }
